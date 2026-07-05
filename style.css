@@ -3,6 +3,8 @@
   --blue: #1b6bb5;
   --blue-light: #4883be;
   --blue-border: #307ac0;
+  --grey: #7b8085;
+  --black: #000108;
   --text-light: #c3cee7;
   --radius: min(5vw, 6.67vh);
 }
@@ -28,7 +30,7 @@ body {
 );
 }
 p {
-    color: #000108
+    color: var(--black);
 }
 #main_title {
     position: absolute;
@@ -62,7 +64,7 @@ p {
     white-space: nowrap;
     font-family: var(--font);
 }
-#palabraita_text1 {
+#palabrita_text1 {
     display: table-cell;
     vertical-align: top;
     top: calc(16.6vh + (4.91vh + 8.73vw) / 4.6);
@@ -75,7 +77,7 @@ p {
     text-align: center;
     white-space: nowrap;
 }
-#palabraita_text2 {
+#palabrita_text2 {
     top: calc(30.3vh + 0.3 * min(min(5.75vw + 3.23vh, 9.26vw), 8vh));
     left: 50vw;
     font-size: min(min(max(1rem, calc(2.03vh + 5.4vw)), 8.2vw), 11vh);
@@ -88,7 +90,7 @@ p {
 #main_screen {
     will-change: transform, opacity;
 }
-#palabraita_play {
+#palabrita_play {
     top: 66vh;
     left: 50vw;
     position: absolute;
@@ -101,7 +103,7 @@ p {
     outline-style: solid;
     outline-color: var(--blue-border);
 }
-#palabraita_text_play {
+#palabrita_text_play {
     top: 50%;
     left: 50%;
     font-size: 6.8vh;
@@ -111,4 +113,60 @@ p {
     text-align: center;
     white-space: nowrap;
     color: var(--text-light);
+}
+.better_button {
+    border: none;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.keyboard_button {
+    width: 6.66vh;
+    height: 7.62vh;
+    background: var(--grey);
+    position: absolute;
+    transform: translate(-50%, 0%);
+    border-radius: calc(var(--radius) / 4.67);
+    outline-width: 0.2px;
+    outline-style: solid;
+    outline-color: var(--black);
+}
+.keyboard_button_big {
+    width: 10.99vh;
+    height: 7.62vh;
+    background: var(--grey);
+    position: absolute;
+    transform: translate(-50%, 0%);
+    border-radius: calc(var(--radius) / 4.67);
+    outline-width: 0.2px;
+    outline-style: solid;
+    outline-color: var(--black);
+}
+.keyboard_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--black);
+    font-size: 4vh;
+    font-family: var(--font);
+    transform: translate(-50%, -53.5%);
+}
+.keyboard_enter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--black);
+    font-size: 2vh;
+    font-family: var(--font);
+    transform: translate(-50%, -53.5%);
+}
+#back_button {
+    background: transparent;
+    position: absolute;
+    color: var(--black);
+    font-family: var(--font);
+    top: 2vh;
+    left: 3vh;
+    font-size: 5vh;
 }

@@ -5,29 +5,204 @@
     <body>
         <div id="main_screen">
             <p id="main_title">Spanish Playground</p> <!-- 18 chars -->
-            <div class="games_buttons" style="top: 56.1vh; left:8.2vw" onclick="palabraita()">
-                <p class="games_text">Palabraita</p>
-            </div>
-            <div class="games_buttons" style="top: 56.1vh; left:36.8vw">
+            <button class="games_buttons better_button" style="top: 56.1vh; left:8.2vw" onclick="palabrita()">
+                <p class="games_text">Palabrita</p>
+            </button>
+            <button class="games_buttons better_button" style="top: 56.1vh; left:36.8vw">
                 <p class="games_text">Conexiónes</p>
-            </div>
-            <div class="games_buttons" style="top: 56.1vh; left:65.4vw">
+            </button>
+            <button class="games_buttons better_button" style="top: 56.1vh; left:65.4vw">
                 <p class="games_text">Hilos</p>
-            </div>
+            </button>
         </div>
-        <div id="palabraita">
-            <p id="palabraita_text1">Palabraita</p>
-            <p id="palabraita_text2">Get 6 chances to guess a 5-letter word.</p>
-            <div id="palabraita_play">
-                <p id="palabraita_text_play">
+
+        <div id="palabrita">
+            <button id="back_button" class="better_button" onclick="back_palabrita()">
+                <
+            </button>
+            <p id="palabrita_text1">Palabrita</p>
+            <p id="palabrita_text2">Get 6 chances to guess a 5-letter word</p>
+            <button id="palabrita_play" class="better_button" onclick="palabrita_play()">
+                <p id="palabrita_text_play">
                     Play
                 </p>
             </div>
         </div>
-        <div id="palabraita_game">
-            <!-- palabraita game here-->
+
+        <div id="palabrita_game">
+            <button id="back_button" class="better_button" onclick="back_palabrita_play()">
+                <
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 66.6vh; left: calc(50vw - 34.47vh);" onclick="">
+                <p class="keyboard_text">
+                    Q
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 66.6vh; left: calc(50vw - 26.81vh);" onclick="">
+                <p class="keyboard_text">
+                    W
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 66.6vh; left: calc(50vw - 19.15vh);" onclick="">
+                <p class="keyboard_text">
+                    E
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 66.6vh; left: calc(50vw - 11.49vh);" onclick="">
+                <p class="keyboard_text">
+                    R
+                </p>
+            </button>
+            
+            <button class="keyboard_button better_button" style="top: 66.6vh; left: calc(50vw - 3.83vh);" onclick="">
+                <p class="keyboard_text">
+                    T
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 66.6vh; left: calc(50vw + 3.83vh);" onclick="">
+                <p class="keyboard_text">
+                    Y
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 66.6vh; left: calc(50vw + 11.49vh);" onclick="">
+                <p class="keyboard_text">
+                    U
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 66.6vh; left: calc(50vw + 19.15vh);" onclick="">
+                <p class="keyboard_text">
+                    I
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 66.6vh; left: calc(50vw + 26.81vh);" onclick="">
+                <p class="keyboard_text">
+                    O
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 66.6vh; left: calc(50vw + 34.47vh);" onclick="">
+                <p class="keyboard_text">
+                    P
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 75.72vh; left: calc(50vw - 30.64vh);" onclick="">
+                <p class="keyboard_text">
+                    A
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 75.72vh; left: calc(50vw - 22.98vh);" onclick="">
+                <p class="keyboard_text">
+                    S
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 75.72vh; left: calc(50vw - 15.32vh);" onclick="">
+                <p class="keyboard_text">
+                    D
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 75.72vh; left: calc(50vw - 7.66vh);" onclick="">
+                <p class="keyboard_text">
+                    F
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 75.72vh; left: 50vw;" onclick="">
+                <p class="keyboard_text">
+                    G
+                </p>
+            </button>
+            
+            <button class="keyboard_button better_button" style="top: 75.72vh; left: calc(50vw + 7.66vh);" onclick="">
+                <p class="keyboard_text">
+                    H
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 75.72vh; left: calc(50vw + 15.32vh);" onclick="">
+                <p class="keyboard_text">
+                    J
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 75.72vh; left: calc(50vw + 22.98vh);" onclick="">
+                <p class="keyboard_text">
+                    K
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 75.72vh; left: calc(50vw + 30.64vh);" onclick="">
+                <p class="keyboard_text">
+                    L
+                </p>
+            </button>
+
+            <button class="keyboard_button_big better_button" style="top: 84.84vh; left: calc(50vw - 32.64vh);" onclick="">
+                <p class="keyboard_enter">
+                    ENTER
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 84.84vh; left: calc(50vw - 22.98vh);" onclick="">
+                <p class="keyboard_text">
+                    Z
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 84.84vh; left: calc(50vw - 15.32vh);" onclick="">
+                <p class="keyboard_text">
+                    X
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 84.84vh; left: calc(50vw - 7.66vh);" onclick="">
+                <p class="keyboard_text">
+                    C
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 84.84vh; left: 50vw;" onclick="">
+                <p class="keyboard_text">
+                    V
+                </p>
+            </button>
+            
+            <button class="keyboard_button better_button" style="top: 84.84vh; left: calc(50vw + 7.66vh);" onclick="">
+                <p class="keyboard_text">
+                    B
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 84.84vh; left: calc(50vw + 15.32vh);" onclick="">
+                <p class="keyboard_text">
+                    N
+                </p>
+            </button>
+
+            <button class="keyboard_button better_button" style="top: 84.84vh; left: calc(50vw + 22.98vh);" onclick="">
+                <p class="keyboard_text">
+                    M
+                </p>
+            </button>
+
+            <button class="keyboard_button_big better_button" style="top: 84.84vh; left: calc(50vw + 32.64vh);" onclick="">
+                <p class="keyboard_text">
+                    ⌫
+                </p>
+            </button>
         </div>
+
         <script src="script.js"></script>
     </body>
 </html>
-
