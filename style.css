@@ -8,9 +8,10 @@
   --black: #000108;
   --text-light: #c3cee7;
   --radius: min(5vw, 6.67vh);
-  --key-width: calc(min(100vw - 6vh, 96.57vh) / 14.5); /* 96.57 == (14.5*base_width) */
+  --key-width: calc(min(6.66 * 100vw / (6.66 + 14.5 + 1), 96.57vh / 14.5)); /* 96.57 == (14.5*base_width) */
   --big-key-width: calc(var(--key-width) * 1.5);
   --key-height: calc(1.142 * var(--key-width));
+  --spacing: calc(var(--key-width) / 6.66)
 }
 
 * {
