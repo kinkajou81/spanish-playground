@@ -1,5 +1,3 @@
-import { XorShift } from './xorshift.js';
-
 // palabrita
 var pal_guesses = ["", "", "", "", "", ""];
 var pal_current_guess = 0;
