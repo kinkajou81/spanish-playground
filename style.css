@@ -2,11 +2,15 @@
   --font: system-ui;
   --blue: #1b6bb5;
   --blue-light: #4883be;
+  --blue-lighter: #a4c8f8;
   --blue-border: #307ac0;
   --grey: #7b8085;
   --black: #000108;
   --text-light: #c3cee7;
   --radius: min(5vw, 6.67vh);
+  --key-width: calc(min(100vw - 13vh, 96.57vh) / 14.5); /* 96.57 == (14.5*base_width) */
+  --big-key-width: calc(var(--key-width) * 1.5);
+  --key-height: calc(1.142 * var(--key-width));
 }
 
 * {
@@ -122,9 +126,9 @@ p {
     cursor: pointer;
 }
 .keyboard_button {
-    width: 6.66vh;
-    height: 7.62vh;
-    background: var(--grey);
+    width: var(--key-width);
+    height: var(--key-height);
+    background: #a4c8f8;
     position: absolute;
     transform: translate(-50%, 0%);
     border-radius: calc(var(--radius) / 4.67);
@@ -133,9 +137,9 @@ p {
     outline-color: var(--black);
 }
 .keyboard_button_big {
-    width: 10.99vh;
-    height: 7.62vh;
-    background: var(--grey);
+    width: var(--big-key-width);
+    height: var(--key-height);
+    background: var(--blue-lighter);
     position: absolute;
     transform: translate(-50%, 0%);
     border-radius: calc(var(--radius) / 4.67);
@@ -169,4 +173,15 @@ p {
     top: 2vh;
     left: 3vh;
     font-size: 5vh;
+}
+
+.word_display_box {
+    width: 7.62vh;
+    height: 7.62vh;
+    background: transparent;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    outline-width: 0.5px;
+    outline-style: solid;
+    outline-color: var(--black);
 }

@@ -1,3 +1,10 @@
+// palabrita
+var pal_guesses = ["", "", "", "", "", ""];
+var pal_current_guess = 0;
+var pal_correct_letters = [];
+var pal_relevant_letters = [];
+var pal_incorrect_letters = [];
+
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("palabrita").style.display = "none";
     document.getElementById("palabrita_game").style.display = "none";
@@ -23,6 +30,21 @@ function back_palabrita_play() {
     document.getElementById("palabrita").style.display = "block";
 }
 
-function palabrita_key() {
-    return;
+function pal_key(key) {
+    if(key == "del") {
+        if(pal_guesses[pal_current_guess].length > 0) {
+            pal_guesses[pal_current_guess] = pal_guesses[pal_current_guess].substring(0, pal_guesses[pal_current_guess].length - 1);
+        }
+        return;
+    } else if(key == "enter") {
+        if(pal_guesses[pal_current_guess].length >= 5) {
+            pal_current_guess += 1;
+        }
+        return;
+    } else if(key.length == 1) {
+        if(pal_guesses[pal_current_guess].length < 5) {
+            pal_guesses[pal_current_guess] += key;
+        }
+        return;
+    }
 }
